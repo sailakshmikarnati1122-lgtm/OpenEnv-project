@@ -1,57 +1,97 @@
-🧠 Module 1 — Reinforcement Learning Basics
+🧠 Module 1 — RL Fundamentals & OpenEnv Basics
+📌 What you learn
 
-📚 Overview
-
-This module introduces the fundamentals of Reinforcement Learning (RL) and how agents interact with environments.
-
-🔁 Core RL Loop
-
-All RL systems follow this simple loop:
+Reinforcement Learning loop:
 
 Observe → Act → Reward → Repeat
-🧩 Step-by-Step Explanation
-1. 👀 Observe
-The agent looks at the current state of the environment
-Example: current game position
-2. 🎯 Act
-The agent chooses an action based on observation
-Example: move left or right
-3. 🎁 Reward
-The environment gives feedback
-Positive reward → good action
-Negative reward → bad action
-4. 🔁 Repeat
-The agent keeps learning from rewards
-Improves decisions over time
-🧠 Key Concepts
-🤖 Agent
-The decision maker
-Example: AI model
-🌍 Environment
-The world the agent interacts with
-Example: game, simulation, or task
-🎯 Action
-What the agent does
-🎁 Reward
-Feedback from environment
-💡 Simple Example
-while not done:
-    observation = env.observe()
-    action = choose_action(observation)
-    reward = env.step(action)
-🎮 Real-World Applications
-🎮 Game AI (Chess, Atari)
-🤖 Chatbots
-🚗 Self-driving systems
+Difference between traditional RL and OpenEnv
+Why microservices are better than local environments
+🛠 What you build
+Basic understanding of agent–environment interaction
+Simple environment calls (reset, step)
+
+⚠️ Module 2 — Why Gym Falls Short
+📌 Problem with Gymnasium
+Runs in same process ❌
+Hard to scale ❌
+Poor debugging ❌
+Python-only ❌
+🛠 What you build
+Conceptual understanding of limitations
+Motivation for OpenEnv architecture
+🚀 Module 3 — OpenEnv Architecture
+📌 Core Idea
+
+Environments = APIs (not Python objects)
+
+🧩 Key Concepts
+HTTP / WebSocket communication
+Isolation using containers
+Type-safe observations
+Scalable systems
+🛠 What you build
+Connect to environments using URLs
+Use reset() and step() remotely
+
+🎮 Module 4 — Working with Environments
+📌 Environments used
+1. Echo Environment
+Input → Output same
+Used for basics
+2. Catch Environment
+Game simulation
+Agent moves paddle
+3. Wordle Environment
+Text-based reasoning
+Guess the correct word
+🛠 What you build
+RL loop implementation
+Agent interaction logic
+Reward-based decision making
+
+🧠 Module 5 — Rollouts & Training (GRPO)
+📌 Concepts
+Rollout = full episode
+Reward functions
+Policy optimization
+🛠 What you build
+Rollout function
+Reward calculations:
+Correct guess ✅
+Green letters 🟩
+Yellow letters 🟨
+Repetition penalty 🔁
+Training loop (GRPO-style)
+🔄 System Flow
+User Prompt
+     ↓
+Agent (LLM)
+     ↓
+Environment (OpenEnv API)
+     ↓
+Observation + Reward
+     ↓
+Training / Learning
+💡 What You Built Overall
+✅ Complete RL Pipeline
+Agent (LLM or logic)
+Environment (Echo / Catch / Wordle)
+Reward system
+Training loop
+🚀 Applications
+🤖 AI Agents
+🎮 Game-playing bots
 🧠 LLM fine-tuning
-🚀 What You Learned
+⚙️ Automation systems
+🧭 Final Summary
 
-✔ Basic RL loop
-✔ Agent–environment interaction
-✔ Importance of rewards
+OpenEnv transforms RL from:
 
-🧭 Summary
+❌ Local experimentation (Gym)
 
-Reinforcement Learning is about:
+to:
 
-Learning by trial and error using rewards
+✅ Scalable, API-based AI systems
+⭐ Conclusion
+
+This project demonstrates how to build production-ready RL systems using modern architecture.
