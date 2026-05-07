@@ -11,6 +11,8 @@ Basic understanding of agent–environment interaction
 Simple environment calls (reset, step)
 
 
+
+
 ⚠️ Module 2 — 
 Why Gym Falls Short
 📌 Problem with Gymnasium
@@ -21,6 +23,8 @@ Python-only ❌
 🛠 What you build
 Conceptual understanding of limitations
 Motivation for OpenEnv architecture
+
+
 
 
 🚀 Module 3 — 
@@ -39,6 +43,8 @@ Connect to environments using URLs
 Use reset() and step() remotely
 
 
+
+
 🎮 Module 4 —
 Working with Environments
 📌 Environments used
@@ -55,6 +61,8 @@ Guess the correct word
 RL loop implementation
 Agent interaction logic
 Reward-based decision making
+
+
 
 🧠 Module 5 —
 Rollouts & Training (GRPO)
