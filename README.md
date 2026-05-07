@@ -10,7 +10,9 @@ Why microservices are better than local environments
 Basic understanding of agent–environment interaction
 Simple environment calls (reset, step)
 
-⚠️ Module 2 — Why Gym Falls Short
+
+⚠️ Module 2 — 
+Why Gym Falls Short
 📌 Problem with Gymnasium
 Runs in same process ❌
 Hard to scale ❌
@@ -19,7 +21,10 @@ Python-only ❌
 🛠 What you build
 Conceptual understanding of limitations
 Motivation for OpenEnv architecture
-🚀 Module 3 — OpenEnv Architecture
+
+
+🚀 Module 3 — 
+OpenEnv Architecture
 📌 Core Idea
 
 Environments = APIs (not Python objects)
@@ -33,7 +38,9 @@ Scalable systems
 Connect to environments using URLs
 Use reset() and step() remotely
 
-🎮 Module 4 — Working with Environments
+
+🎮 Module 4 —
+Working with Environments
 📌 Environments used
 1. Echo Environment
 Input → Output same
@@ -49,7 +56,8 @@ RL loop implementation
 Agent interaction logic
 Reward-based decision making
 
-🧠 Module 5 — Rollouts & Training (GRPO)
+🧠 Module 5 —
+Rollouts & Training (GRPO)
 📌 Concepts
 Rollout = full episode
 Reward functions
@@ -61,6 +69,7 @@ Correct guess ✅
 Green letters 🟩
 Yellow letters 🟨
 Repetition penalty 🔁
+
 Training loop (GRPO-style)
 🔄 System Flow
 User Prompt
